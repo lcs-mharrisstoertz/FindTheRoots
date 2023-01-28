@@ -11,6 +11,7 @@
 		CCD7F9D1298040D700850C5D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCD7F9D0298040D700850C5D /* Preview Assets.xcassets */; };
 		CCD7F9D82980411300850C5D /* RootsCalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD7F9D72980411300850C5D /* RootsCalculatorView.swift */; };
 		CCD7F9DB2980456300850C5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCD7F9DA2980456300850C5D /* Assets.xcassets */; };
+		CCD7F9DE298579B300850C5D /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD7F9DD298579B300850C5D /* Result.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		CCD7F9D0298040D700850C5D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CCD7F9D72980411300850C5D /* RootsCalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootsCalculatorView.swift; sourceTree = "<group>"; };
 		CCD7F9DA2980456300850C5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CCD7F9DD298579B300850C5D /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				CCD7F9C9298040D100850C5D /* FindTheRootsApp.swift */,
+				CCD7F9DC2985794700850C5D /* Model */,
 				CCD7F9D92980412B00850C5D /* Views */,
 				CCD7F9DA2980456300850C5D /* Assets.xcassets */,
 				CCD7F9CF298040D700850C5D /* Preview Content */,
@@ -73,6 +76,14 @@
 				CCD7F9D72980411300850C5D /* RootsCalculatorView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		CCD7F9DC2985794700850C5D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CCD7F9DD298579B300850C5D /* Result.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,6 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCD7F9DE298579B300850C5D /* Result.swift in Sources */,
 				CCD7F9D82980411300850C5D /* RootsCalculatorView.swift in Sources */,
 				CCD7F9CA298040D100850C5D /* FindTheRootsApp.swift in Sources */,
 			);
