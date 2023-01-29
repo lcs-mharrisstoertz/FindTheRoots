@@ -14,6 +14,10 @@ struct RootsCalculatorView: View {
     @State var b: Double = 0
     @State var c: Double = 0
     
+    // List of prior results
+       @State var priorResults: [Result] = []
+
+    
     // MARK: computed properties
     var result: String {
         let discriminant = b * b - 4 * a * c
@@ -31,9 +35,12 @@ struct RootsCalculatorView: View {
     
     var body: some View {
         VStack (spacing: 0){
-            Image("Formula 2")
-                .resizable()
-                .scaledToFit()
+            HStack{
+                
+                Image("Formula 2")
+                    .resizable()
+                    .scaledToFit()
+            }
               
             
             Image("Formula 1")
@@ -70,9 +77,12 @@ struct RootsCalculatorView: View {
                     
                     Slider(value: $c, in: -20...20)
                     
+                    
                 }
-               
             }
+            .font(Font.custom("Times New Roman",
+                                     size: 30.0,
+                                     relativeTo: .body))
             
            
             
@@ -80,6 +90,23 @@ struct RootsCalculatorView: View {
             
             Text("\(result)")
             
+                .font(Font.custom("Times New Roman",
+                                         size: 30.0,
+                                         relativeTo: .body))
+            
+            Button(action: {
+                let latestResult = Result(a: a,
+                                          b: b,
+                                          c: c,
+                                          roots: result)
+                priorResults.append(latestResult)
+            }, label: {
+                Text("Save Results")
+            })
+            .buttonStyle(.bordered)
+            .padding()
+            
+            //history
             
             Spacer()
            
@@ -88,9 +115,7 @@ struct RootsCalculatorView: View {
             
         }
         
-        .font(Font.custom("Times New Roman",
-                                 size: 30.0,
-                                 relativeTo: .body))
+        
         
         .navigationTitle("Find The Roots")
     }
