@@ -12,6 +12,7 @@
 		CCD7F9D82980411300850C5D /* RootsCalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD7F9D72980411300850C5D /* RootsCalculatorView.swift */; };
 		CCD7F9DB2980456300850C5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCD7F9DA2980456300850C5D /* Assets.xcassets */; };
 		CCD7F9DE298579B300850C5D /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD7F9DD298579B300850C5D /* Result.swift */; };
+		CCD7F9E029857C4800850C5D /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD7F9DF29857C4800850C5D /* ResultView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		CCD7F9D72980411300850C5D /* RootsCalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootsCalculatorView.swift; sourceTree = "<group>"; };
 		CCD7F9DA2980456300850C5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CCD7F9DD298579B300850C5D /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		CCD7F9DF29857C4800850C5D /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				CCD7F9D72980411300850C5D /* RootsCalculatorView.swift */,
+				CCD7F9DF29857C4800850C5D /* ResultView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CCD7F9DE298579B300850C5D /* Result.swift in Sources */,
+				CCD7F9E029857C4800850C5D /* ResultView.swift in Sources */,
 				CCD7F9D82980411300850C5D /* RootsCalculatorView.swift in Sources */,
 				CCD7F9CA298040D100850C5D /* FindTheRootsApp.swift in Sources */,
 			);
